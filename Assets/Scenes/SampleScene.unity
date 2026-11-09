@@ -205,8 +205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.009259667, y: 0.96271664, z: -0.033227224, w: 0.26830372}
-  m_LocalPosition: {x: -8.29289, y: 4.63623, z: 15.507896}
+  m_LocalRotation: {x: 0.013199404, y: 0.948462, z: -0.039859224, w: 0.31409708}
+  m_LocalPosition: {x: -10.845243, y: 4.5281787, z: 12.939738}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -459,7 +459,7 @@ Transform:
   m_GameObject: {fileID: 869674151}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.82, y: 1.95, z: -13.79}
+  m_LocalPosition: {x: 3.53, y: -0.25, z: -13.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -504,7 +504,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 2
-  m_Color: {r: 0, g: 0.12426098, b: 0.9339623, a: 1}
+  m_Color: {r: 0, g: 0.13445365, b: 1, a: 1}
   m_Intensity: 1000
   m_Range: 10
   m_SpotAngle: 30
@@ -547,7 +547,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -568,6 +568,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1190619160}
+  - component: {fileID: 1190619161}
+  - component: {fileID: 1190619162}
   m_Layer: 0
   m_Name: Siren_pivot
   m_TagString: Untagged
@@ -583,15 +585,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190619159}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.15, y: 1.95, z: 15.72}
+  m_LocalRotation: {x: -0, y: -0.8074072, z: -0, w: -0.5899947}
+  m_LocalPosition: {x: 15.33, y: 2.52, z: 0.21035206}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1376281695}
   - {fileID: 869674152}
   m_Father: {fileID: 1574938795}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -252.313, z: 0}
+--- !u!114 &1190619161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190619159}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2338a271bdc12874693a2655b22ec3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Siren_Rotation
+  rotationSpeed: 180
+--- !u!114 &1190619162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190619159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2338a271bdc12874693a2655b22ec3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SirenRotation
+  rotationSpeed: 180
 --- !u!1 &1376281694
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +694,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.8862745, g: 0, b: 0, a: 1}
   m_Intensity: 1000
-  m_Range: 5
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
